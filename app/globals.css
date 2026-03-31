@@ -38,3 +38,8 @@
   );
   background-size: 14px 14px;
 }
+
+.border-style {
+  /* border-color: #b43131; */
+  border: 0.2px solid rgba(53, 53, 53, 0.5);
+}

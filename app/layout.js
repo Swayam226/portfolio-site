@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${instrument.variable} ${hanken.variable} h-full antialiased`}
+      className={`${instrument.variable} ${hanken.variable} h-full antialiased bg-background text-info font-body`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
