@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Sun } from "lucide-react";
 import Image from "next/image";
 import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react/ssr";
-import { EnvelopeIcon, PaperclipIcon, XLogoIcon } from "@phosphor-icons/react/dist/ssr";
+import { EnvelopeIcon, ReadCvLogoIcon, XLogoIcon } from "@phosphor-icons/react/dist/ssr";
 
 export default function Home() {
   return (
@@ -32,8 +32,9 @@ export default function Home() {
           </nav>
 
           <div className="flex flex-col">
-            <main className="px-8 py-10 flex flex-col min-h-screen">
-              <div className="h-40 flex flex-row justify-start gap-8 items-center">
+            <main className="px-8 py-10 flex flex-col gap-4 min-h-screen">
+              {/* name + image + headings */}
+              <div className="h-40 flex flex-row justify-start gap-8 items-center border-b border-[#353535E6] pb-10">
                 <div className="rounded-full h-34 w-34 relative overflow-hidden">
                   <Image
                     src="/silver_surfer.jpg"
@@ -44,24 +45,26 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <h1 className="font-heading text-heading text-4xl italic">Swayam Kumar</h1>
-                  <div className="font-body text-body text-sm">21 · Front-End Engineer · Developer</div>
-                  <div className="flex flex-row gap-2">
+                  <div className="font-body text-body text-md">21 · Front-End Engineer · Developer</div>
+                </div>
+              </div>
 
-                    {/* each social container */}
-                    <div className="relative group w-fit">
-                      <div className="h-7 w-7 flex items-center justify-start ">
-                        <a
-                          href="https://github.com/Swayam226"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <GithubLogoIcon size={18} className="text-info" />
+              {/* socials + tldr + intro */}
+              <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                <h1 className="font-heading text-heading text-3xl pb-4">About</h1>
+                <div className="flex flex-row gap-2">
 
-                        </a>
-                      </div>
-                      {/* Tooltip */}
-                      <span
-                        className="
+                  {/* each social container */}
+                  <div className="relative group w-fit">
+                    <div className="h-7 w-7 flex items-center justify-start ">
+                      <a
+                        href="https://github.com/Swayam226"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {/* Tooltip */}
+                        <span
+                          className="
     absolute top-full mt-2 left-1/2 -translate-x-1/2
     text-xs px-2 py-1 rounded-md
     bg-background border border-neutral-700
@@ -71,27 +74,31 @@ export default function Home() {
     pointer-events-none
     whitespace-nowrap
   "
-                      >
-                        GitHub
-                      </span>
-                    </div>
-
-
-                    {/* each social container */}
-                    <div className="relative group w-fit">
-                      <div className="h-7 w-7 flex items-center justify-start ">
-                        <a
-                          href="https://github.com/Swayam226"
-                          target="_blank"
-                          rel="noopener noreferrer"
                         >
-                          <LinkedinLogoIcon size={18} className="text-info" />
+                          GitHub
+                        </span>
+                        <GithubLogoIcon size={18} className="text-info" />
 
-                        </a>
-                      </div>
-                      {/* Tooltip */}
-                      <span
-                        className="
+                      </a>
+                    </div>
+                  </div>
+
+
+                  {/* each social container */}
+                  <div className="relative group w-fit">
+                    <div className="h-7 w-7 flex items-center justify-start ">
+                      <a
+                        href="https://www.linkedin.com/in/swayamkumar226/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <LinkedinLogoIcon size={18} className="text-info" />
+
+                      </a>
+                    </div>
+                    {/* Tooltip */}
+                    <span
+                      className="
     absolute top-full mt-2 left-1/2 -translate-x-1/2
     text-xs px-2 py-1 rounded-md
     bg-background border border-neutral-700
@@ -101,25 +108,25 @@ export default function Home() {
     pointer-events-none
     whitespace-nowrap
   "
+                    >
+                      LinkedIn
+                    </span>
+                  </div>
+                  {/* each social container */}
+                  <div className="relative group w-fit">
+                    <div className="h-7 w-7 flex items-center justify-start ">
+                      <a
+                        href="https://x.com/SwayamXDev"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        LinkedIn
-                      </span>
-                    </div>
-                    {/* each social container */}
-                    <div className="relative group w-fit">
-                      <div className="h-7 w-7 flex items-center justify-start ">
-                        <a
-                          href="https://github.com/Swayam226"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <XLogoIcon size={18} className="text-info" />
+                        <XLogoIcon size={18} className="text-info" />
 
-                        </a>
-                      </div>
-                      {/* Tooltip */}
-                      <span
-                        className="
+                      </a>
+                    </div>
+                    {/* Tooltip */}
+                    <span
+                      className="
     absolute top-full mt-2 left-1/2 -translate-x-1/2
     text-xs px-2 py-1 rounded-md
     bg-background border border-neutral-700
@@ -129,25 +136,25 @@ export default function Home() {
     pointer-events-none
     whitespace-nowrap
   "
+                    >
+                      Twitter
+                    </span>
+                  </div>
+                  {/* each social container */}
+                  <div className="relative group w-fit">
+                    <div className="h-7 w-7 flex items-center justify-start ">
+                      <a
+                        href="mailto:swayamkumar226@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Twitter
-                      </span>
-                    </div>
-                    {/* each social container */}
-                    <div className="relative group w-fit">
-                      <div className="h-7 w-7 flex items-center justify-start ">
-                        <a
-                          href="https://github.com/Swayam226"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <EnvelopeIcon size={18} className="text-info" />
+                        <EnvelopeIcon size={18} className="text-info" />
 
-                        </a>
-                      </div>
-                      {/* Tooltip */}
-                      <span
-                        className="
+                      </a>
+                    </div>
+                    {/* Tooltip */}
+                    <span
+                      className="
     absolute top-full mt-2 left-1/2 -translate-x-1/2
     text-xs px-2 py-1 rounded-md
     bg-background border border-neutral-700
@@ -157,25 +164,25 @@ export default function Home() {
     pointer-events-none
     whitespace-nowrap
   "
+                    >
+                      Mail
+                    </span>
+                  </div>
+                  {/* each social container */}
+                  <div className="relative group w-fit">
+                    <div className="h-7 w-7 flex items-center justify-start ">
+                      <a
+                        href="https://github.com/Swayam226"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Mail
-                      </span>
-                    </div>
-                    {/* each social container */}
-                    <div className="relative group w-fit">
-                      <div className="h-7 w-7 flex items-center justify-start ">
-                        <a
-                          href="https://github.com/Swayam226"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <PaperclipIcon size={18} className="text-info" />
+                        <ReadCvLogoIcon size={18} className="text-info" />
 
-                        </a>
-                      </div>
-                      {/* Tooltip */}
-                      <span
-                        className="
+                      </a>
+                    </div>
+                    {/* Tooltip */}
+                    <span
+                      className="
     absolute top-full mt-2 left-1/2 -translate-x-1/2
     text-xs px-2 py-1 rounded-md
     bg-background border border-neutral-700
@@ -185,13 +192,15 @@ export default function Home() {
     pointer-events-none
     whitespace-nowrap
   "
-                      >
-                        Resume
-                      </span>
-                    </div>
+                    >
+                      Resume
+                    </span>
                   </div>
-                  <span className="font-body text-body text-sm">I build beautiful web experiences using <span className="text-heading">react.js</span>, <span className="text-heading">next.js</span>, <span className="text-heading">tailwind css</span></span>
                 </div>
+                <span className="text-body text-md">I&apos;m a <span className="text-heading">Front-End Developer</span> and <span className="text-heading">Designer</span> based in Bhubaneswar, Odisha.</span>
+                <span className="font-body text-body text-md">I build elegance and optimized web experiences using <span className="text-heading">react.js</span>, <span className="text-heading">next.js</span>, <span className="text-heading">tailwind css.</span></span>
+                <span>highly invested in <span className="text-heading">science</span> and <span className="text-heading">tech</span> since childhood, along with Football.</span>
+                <span>a <span className="text-heading">computer</span> excites me and <span className="text-heading">programming</span> enables me.</span>
               </div>
             </main>
           </div>
