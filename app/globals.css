@@ -36,10 +36,15 @@
     var(--grid-color) 1.25px,
     transparent 1.25px
   );
-  background-size: 14px 14px;
+  background-size: 8px 8px;
 }
 
 .border-style {
   /* border-color: #b43131; */
   border: 1px solid rgba(53, 53, 53, 0.9);
+}
+
+.social-border-style {
+  border: 1px solid #818181;
+  border-radius: 10px;
 }
