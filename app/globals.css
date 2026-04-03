@@ -48,3 +48,13 @@
   border: 1px solid #818181;
   border-radius: 10px;
 }
+
+.button-border {
+  border: none;
+  background-color: #2a2a2a;
+  transition: background-color 0.3s ease;
+}
+.button-border:hover {
+  border: none;
+  background-color: #373737;
+}
