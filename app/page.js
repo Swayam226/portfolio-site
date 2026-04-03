@@ -4,6 +4,7 @@ import Image from "next/image";
 import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react/ssr";
 import { EnvelopeIcon, ReadCvLogoIcon, XLogoIcon } from "@phosphor-icons/react/dist/ssr";
 import SocialLogo from "@/components/SocialLogo";
+import { GitHubCalendar } from 'react-github-calendar';
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <div className="flex w-full max-w-4xl">
 
         {/* left pattern div */}
-        <div className="w-18 border-style bg-dot-grid"></div>
+        <div className="w-14 border-style bg-dot-grid"></div>
 
         {/* central div starts here */}
         <div className="flex-1 max-w-3xl flex flex-col">
@@ -92,15 +93,25 @@ export default function Home() {
 
               {/* github contri */}
               <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
-
+                <h1 className="font-heading text-heading text-3xl pb-2">GitHub Activities</h1>
+                <GitHubCalendar
+                  username="swayam226"
+                  year="2026"
+                  colorScheme="dark"
+                  blockSize={10}
+                  blockMargin={3}
+                  fontSize={12}
+                  theme={{
+                    dark: ["#2a2a2a", "#ffffff"],
+                  }}
+                />
               </div>
             </main>
           </div>
         </div>
 
         {/* right pattern div */}
-        <div className="w-18 border-style bg-dot-grid"></div>
-
+        <div className="w-14 border-style bg-dot-grid"></div>
       </div>
     </div>
   );
