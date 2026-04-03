@@ -22,7 +22,7 @@ export default function SocialLogo({ href, text, icon: Icon }) {
             >
               {text}
             </span>
-            <Icon size={18} className="text-info" />
+            <Icon size={22} className="text-info" />
           </a>
         </div>
       </div>

@@ -66,7 +66,7 @@ export default function Home() {
               {/* socials */}
               <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
                 <h1 className="font-heading text-heading text-3xl pb-2">Connect with Me</h1>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-4">
                   <SocialLogo href="https://github.com/Swayam226" text="GitHub" icon={GithubLogoIcon} />
                   <SocialLogo href="https://www.linkedin.com/in/swayamkumar226/" text="LinkedIn" icon={LinkedinLogoIcon} />
                   <SocialLogo href="https://x.com/SwayamXDev" text="Twitter" icon={XLogoIcon} />

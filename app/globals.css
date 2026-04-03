@@ -58,3 +58,8 @@
   border: none;
   background-color: #373737;
 }
+
+::selection {
+  background: var(--heading);
+  color: var(--background);
+}
