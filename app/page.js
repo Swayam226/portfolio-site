@@ -4,7 +4,7 @@ import Image from "next/image";
 import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react/ssr";
 import { EnvelopeIcon, ReadCvLogoIcon, XLogoIcon } from "@phosphor-icons/react/dist/ssr";
 import SocialLogo from "@/components/SocialLogo";
-import { GitHubCalendar } from 'react-github-calendar';
+import GithubGraph from "@/components/GithubGraph";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
             <div className="px-8 min-w-3xl mx-auto h-9">
               <div className="flex text-body items-center justify-between h-full">
                 <div className="h-full flex gap-5 items-center text-sm">
-                  <Link href="/">Home</Link>
+                  <Link href="/">tldr.</Link>
                   <Link href="/projects">Projects</Link>
                   <Link href="/blogs">Blogs</Link>
                 </div>
@@ -43,6 +43,7 @@ export default function Home() {
                     src="/silver_surfer.jpg"
                     alt="image of silver surfer - display picture of mine"
                     fill
+                    sizes="136px"
                     className="object-cover"
                   />
                 </div>
@@ -76,7 +77,7 @@ export default function Home() {
 
               {/* intro + tldr */}
               <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
-                <h1 className="font-heading text-heading text-3xl pb-2">Intro</h1>
+                <h1 className="font-heading text-heading text-3xl pb-2">tldr.</h1>
                 <span className="text-body text-md">
                   I&apos;m a <span className="text-heading">Front-End Developer</span> and <span className="text-heading">Designer</span> based in Bhubaneswar, Odisha.
                 </span>
@@ -94,17 +95,14 @@ export default function Home() {
               {/* github contri */}
               <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
                 <h1 className="font-heading text-heading text-3xl pb-2">GitHub Activities</h1>
-                <GitHubCalendar
-                  username="swayam226"
-                  year="2026"
-                  colorScheme="dark"
-                  blockSize={10}
-                  blockMargin={3}
-                  fontSize={12}
-                  theme={{
-                    dark: ["#2a2a2a", "#ffffff"],
-                  }}
-                />
+                <GithubGraph />
+              </div>
+
+
+              {/* projects */}
+              <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                <h1 className="font-heading text-heading text-3xl pb-2">Proof of Work</h1>
+
               </div>
             </main>
           </div>
