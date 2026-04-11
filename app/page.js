@@ -104,15 +104,62 @@ export default function Home() {
               <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
                 <h1 className="font-heading text-heading text-3xl pb-4">Proof of Work</h1>
                 <div className="py-4">
-                  <div className="grid grid-cols-2 grid-rows-3 gap-2 place-items-stretch h-200 w-full">
+                  <div className="grid grid-cols-2 grid-rows-3 gap-2 place-items-center-stretch h-280 w-full">
                     <ProjectTile
                       bgColor="bg-tile"
-                      height="h-78"
+                      height="h-86"
                       width="w-80"
                       text="Landing for a fictional therapist's site"
                       src="/proj-1-cover.webp"
                       alt="Landing Page of a fictional therapist's profile site"
+                      langtext="Next.js · Tailwind CSS · Motion"
                     />
+                    <ProjectTile
+                      bgColor="bg-tile"
+                      height="h-86"
+                      width="w-80"
+                      text="Landing for a fictional therapist's site"
+                      src="/proj-1-cover.webp"
+                      alt="Landing Page of a fictional therapist's profile site"
+                      langtext="Next.js · Tailwind CSS · Motion"
+                    />
+                    <ProjectTile
+                      bgColor="bg-tile"
+                      height="h-86"
+                      width="w-80"
+                      text="Landing for a fictional therapist's site"
+                      src="/proj-1-cover.webp"
+                      alt="Landing Page of a fictional therapist's profile site"
+                      langtext="Next.js · Tailwind CSS · Motion"
+                    />
+                    <ProjectTile
+                      bgColor="bg-tile"
+                      height="h-86"
+                      width="w-80"
+                      text="Landing for a fictional therapist's site"
+                      src="/proj-1-cover.webp"
+                      alt="Landing Page of a fictional therapist's profile site"
+                      langtext="Next.js · Tailwind CSS · Motion"
+                    />
+                    <ProjectTile
+                      bgColor="bg-tile"
+                      height="h-86"
+                      width="w-80"
+                      text="Landing for a fictional therapist's site"
+                      src="/proj-1-cover.webp"
+                      alt="Landing Page of a fictional therapist's profile site"
+                      langtext="Next.js · Tailwind CSS · Motion"
+                    />
+                    <ProjectTile
+                      bgColor="bg-tile"
+                      height="h-86"
+                      width="w-80"
+                      text="Landing for a fictional therapist's site"
+                      src="/proj-1-cover.webp"
+                      alt="Landing Page of a fictional therapist's profile site"
+                      langtext="Next.js · Tailwind CSS · Motion"
+                    />
+
                   </div>
                 </div>
               </div>

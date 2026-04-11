@@ -70,8 +70,8 @@
 
 .dot-live {
   border-radius: 50%;
-  height: 8px;
-  width: 8px;
+  height: 6px;
+  width: 6px;
   animation: blink 2s infinite;
   background-color: oklch(72.3% 0.219 149.579);
   display: inline-block;
