@@ -9,6 +9,8 @@
   --info: #a1a1a1;
   --grid-color: lab(19.96% -0.0000149012 0);
   --grid-color: #2a2a2a;
+
+  --tile-color: #7c2e2e;
 }
 
 .light {
@@ -29,6 +31,8 @@
 
   --font-heading: var(--font-instrument);
   --font-body: var(--font-hanken);
+
+  --tile: var(--tile-color);
 }
 
 .bg-dot-grid {
@@ -62,4 +66,27 @@
 ::selection {
   background: var(--heading);
   color: var(--background);
+}
+
+.dot-live {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  animation: blink 2s infinite;
+  background-color: oklch(72.3% 0.219 149.579);
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

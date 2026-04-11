@@ -5,6 +5,7 @@ import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react/ssr";
 import { EnvelopeIcon, ReadCvLogoIcon, XLogoIcon } from "@phosphor-icons/react/dist/ssr";
 import SocialLogo from "@/components/SocialLogo";
 import GithubGraph from "@/components/GithubGraph";
+import ProjectTile from "@/components/ProjectTile";
 
 export default function Home() {
   return (
@@ -94,15 +95,26 @@ export default function Home() {
 
               {/* github contri */}
               <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
-                <h1 className="font-heading text-heading text-3xl pb-2">GitHub Activities</h1>
+                <h1 className="font-heading text-heading text-3xl pb-4">GitHub Activities</h1>
                 <GithubGraph />
               </div>
 
 
               {/* projects */}
               <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
-                <h1 className="font-heading text-heading text-3xl pb-2">Proof of Work</h1>
-
+                <h1 className="font-heading text-heading text-3xl pb-4">Proof of Work</h1>
+                <div className="py-4">
+                  <div className="grid grid-cols-2 grid-rows-3 gap-2 place-items-stretch h-200 w-full">
+                    <ProjectTile
+                      bgColor="bg-tile"
+                      height="h-78"
+                      width="w-80"
+                      text="Landing for a fictional therapist's site"
+                      src="/proj-1-cover.webp"
+                      alt="Landing Page of a fictional therapist's profile site"
+                    />
+                  </div>
+                </div>
               </div>
             </main>
           </div>
