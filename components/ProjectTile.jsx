@@ -9,21 +9,30 @@ export default function ProjectTile({
   src,
   alt,
   langtext,
+  livelink,
+  repolink,
 }) {
   return (
     <div
-      className={`${bgColor} ${height} ${width} rounded-md p-2 border border-[#3f3f3f]`}
+      className={`${bgColor} group w-full rounded-md p-2 border border-[#3f3f3f] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30`}
     >
       <div className="w-full h-6/9 rounded-lg p-2 relative">
-        <Image src={src} alt={alt} className="object-cover" fill />
-      </div>
-      <div className="w-full h-3/9 rounded-lg flex flex-col gap-2">
-        <h1 className="text-heading pt-2 text-md">{text}</h1>
-        <span className="text-info text-xs pt-1">{langtext}</span>
-        <ProjButton
-          livelink="https://dr-maya-therapist.vercel.app/"
-          repolink="https://github.com/Swayam226/therapist-profile"
+        <Image
+          src={src}
+          alt={alt}
+          className="object-cover
+          transition-transform duration-300
+          group-hover:scale-105"
+          quality={100}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition duration-300" />
+      </div>
+      <div className="w-full h-3/9 rounded-lg flex flex-col gap-1">
+        <h1 className="text-heading text-md font-medium pt-2">{text}</h1>
+        <span className="text-info text-xs">{langtext}</span>
+        <ProjButton livelink={livelink} repolink={repolink} />
       </div>
     </div>
   );

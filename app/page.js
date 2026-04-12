@@ -104,62 +104,43 @@ export default function Home() {
               <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
                 <h1 className="font-heading text-heading text-3xl pb-4">Proof of Work</h1>
                 <div className="py-4">
-                  <div className="grid grid-cols-2 grid-rows-3 gap-2 place-items-center-stretch h-280 w-full">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center-stretch h-180 w-full">
                     <ProjectTile
                       bgColor="bg-tile"
-                      height="h-86"
-                      width="w-80"
                       text="Landing for a fictional therapist's site"
                       src="/proj-1-cover.webp"
                       alt="Landing Page of a fictional therapist's profile site"
                       langtext="Next.js · Tailwind CSS · Motion"
+                      livelink="https://dr-maya-therapist.vercel.app/"
+                      repolink="https://github.com/Swayam226/therapist-profile"
                     />
                     <ProjectTile
                       bgColor="bg-tile"
-                      height="h-86"
-                      width="w-80"
-                      text="Landing for a fictional therapist's site"
-                      src="/proj-1-cover.webp"
-                      alt="Landing Page of a fictional therapist's profile site"
+                      text="Blog Haven - Full Stack CRUD App"
+                      src="/blog-cover.png"
+                      alt="Blog Haven - Full Stack CRUD App"
                       langtext="Next.js · Tailwind CSS · Motion"
+                      livelink="https://blog-haven-sk.vercel.app/"
+                      repolink="https://github.com/Swayam226/crud-blog"
                     />
                     <ProjectTile
                       bgColor="bg-tile"
-                      height="h-86"
-                      width="w-80"
-                      text="Landing for a fictional therapist's site"
-                      src="/proj-1-cover.webp"
-                      alt="Landing Page of a fictional therapist's profile site"
-                      langtext="Next.js · Tailwind CSS · Motion"
+                      text="Beware of Assembly - Word Guessing Game"
+                      src="/assembly-cover.png"
+                      alt="Beware of Assembly - Word Guessing Game"
+                      langtext="React.js · Tailwind CSS"
+                      livelink="https://assemby-endgame.vercel.app/"
+                      repolink="https://github.com/Swayam226/assembly-endgame"
                     />
                     <ProjectTile
                       bgColor="bg-tile"
-                      height="h-86"
-                      width="w-80"
-                      text="Landing for a fictional therapist's site"
-                      src="/proj-1-cover.webp"
+                      text="AI Recipe Generator"
+                      src="/recipe-cover.png"
                       alt="Landing Page of a fictional therapist's profile site"
-                      langtext="Next.js · Tailwind CSS · Motion"
+                      langtext="React.js · Tailwind CSS · Gemini API"
+                      livelink="https://recipe-generator-zenith.vercel.app/"
+                      repolink="https://github.com/Swayam226/recipe-generator"
                     />
-                    <ProjectTile
-                      bgColor="bg-tile"
-                      height="h-86"
-                      width="w-80"
-                      text="Landing for a fictional therapist's site"
-                      src="/proj-1-cover.webp"
-                      alt="Landing Page of a fictional therapist's profile site"
-                      langtext="Next.js · Tailwind CSS · Motion"
-                    />
-                    <ProjectTile
-                      bgColor="bg-tile"
-                      height="h-86"
-                      width="w-80"
-                      text="Landing for a fictional therapist's site"
-                      src="/proj-1-cover.webp"
-                      alt="Landing Page of a fictional therapist's profile site"
-                      langtext="Next.js · Tailwind CSS · Motion"
-                    />
-
                   </div>
                 </div>
               </div>
