@@ -6,6 +6,9 @@ import { EnvelopeIcon, ReadCvLogoIcon, XLogoIcon } from "@phosphor-icons/react/d
 import SocialLogo from "@/components/SocialLogo";
 import GithubGraph from "@/components/GithubGraph";
 import ProjectTile from "@/components/ProjectTile";
+import SkillTablet from "@/components/SkillTablet";
+import { SiNextdotjs, SiReact, SiTailwindcss, SiMongodb, SiFirebase, SiPostgresql, SiNodedotjs, SiJavascript, SiPostman, SiMysql, SiShadcnui, SiCplusplus, SiBun, SiPython, SiGnubash, SiLinux, SiGit, SiGithub, SiFigma, SiVercel } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -119,7 +122,7 @@ export default function Home() {
                       text="Blog Haven - Full Stack CRUD App"
                       src="/blog-cover.png"
                       alt="Blog Haven - Full Stack CRUD App"
-                      langtext="Next.js · Tailwind CSS · Motion"
+                      langtext="Next.js · MongoDB · Tailwind CSS · Motion"
                       livelink="https://blog-haven-sk.vercel.app/"
                       repolink="https://github.com/Swayam226/crud-blog"
                     />
@@ -136,10 +139,107 @@ export default function Home() {
                       bgColor="bg-tile"
                       text="AI Recipe Generator"
                       src="/recipe-cover.png"
-                      alt="Landing Page of a fictional therapist's profile site"
+                      alt="AI Recipe Generator website"
                       langtext="React.js · Tailwind CSS · Gemini API"
                       livelink="https://recipe-generator-zenith.vercel.app/"
                       repolink="https://github.com/Swayam226/recipe-generator"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/*skills tablets*/}
+              <div className="flex flex-col">
+                <h1 className="font-heading text-heading text-3xl pb-4">Tech I Work With</h1>
+                <div className="w-full h-30 flex flex-col gap-4">
+                  <div className="flex flex-row gap-4">
+                    <SkillTablet
+                      skillText="Next.js"
+                      logo={SiNextdotjs}
+                    />
+                    <SkillTablet
+                      skillText="React.js"
+                      logo={SiReact}
+                    />
+                    <SkillTablet
+                      skillText="MongoDB"
+                      logo={SiMongodb}
+                    />
+                    <SkillTablet
+                      skillText="PostgreSQL"
+                      logo={SiPostgresql}
+                    />
+                    <SkillTablet
+                      skillText="Firebase"
+                      logo={SiFirebase}
+                    />
+                    <SkillTablet
+                      skillText="Node"
+                      logo={SiNodedotjs}
+                    />
+                    <SkillTablet
+                      skillText="Bun"
+                      logo={SiBun}
+                    />
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <SkillTablet
+                      skillText="Tailwind"
+                      logo={SiTailwindcss}
+                    />
+                    <SkillTablet
+                      skillText="Javascript"
+                      logo={SiJavascript}
+                    />
+                    <SkillTablet
+                      skillText="Postman"
+                      logo={SiPostman}
+                    />
+                    <SkillTablet
+                      skillText="MySQL"
+                      logo={SiMysql}
+                    />
+                    <SkillTablet
+                      skillText="Shadcn"
+                      logo={SiShadcnui}
+                    />
+                    <SkillTablet
+                      skillText="C/C++"
+                      logo={SiCplusplus}
+                    />
+                    <SkillTablet
+                      skillText="Java"
+                      logo={FaJava}
+                    />
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <SkillTablet
+                      skillText="Python"
+                      logo={SiPython}
+                    />
+                    <SkillTablet
+                      skillText="Linux"
+                      logo={SiLinux}
+                    />
+                    <SkillTablet
+                      skillText="Bash"
+                      logo={SiGnubash}
+                    />
+                    <SkillTablet
+                      skillText="Git"
+                      logo={SiGit}
+                    />
+                    <SkillTablet
+                      skillText="GitHub"
+                      logo={SiGithub}
+                    />
+                    <SkillTablet
+                      skillText="Figma"
+                      logo={SiFigma}
+                    />
+                    <SkillTablet
+                      skillText="Vercel"
+                      logo={SiVercel}
                     />
                   </div>
                 </div>

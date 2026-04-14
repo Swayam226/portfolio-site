@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowUpRightIcon } from "@phosphor-icons/react/dist/ssr";
 
 export default function ProjButton(props) {
   return (
@@ -13,9 +14,10 @@ export default function ProjButton(props) {
       <Link
         href={props.repolink}
         target="_blank"
-        className="w-28 h-7 border-2 border-[#373737] rounded-2xl text-xs text-info flex items-center justify-center hover:bg-[#2e2d2d] transition-colors duration-300  hover:scale-105"
+        className="w-28 h-7 border-2 border-[#373737] rounded-2xl text-xs text-info flex gap-2 items-center justify-center hover:bg-[#2e2d2d] transition-colors duration-300 hover:scale-105"
       >
         GitHub Repo
+        <ArrowUpRightIcon size={12} />
       </Link>
     </div>
   );
