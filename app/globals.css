@@ -35,6 +35,10 @@
   --tile: var(--tile-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-dot-grid {
   background-image: radial-gradient(
     var(--grid-color) 1.25px,

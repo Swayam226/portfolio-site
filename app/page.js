@@ -9,248 +9,254 @@ import ProjectTile from "@/components/ProjectTile";
 import SkillTablet from "@/components/SkillTablet";
 import { SiNextdotjs, SiReact, SiTailwindcss, SiMongodb, SiFirebase, SiPostgresql, SiNodedotjs, SiJavascript, SiPostman, SiMysql, SiShadcnui, SiCplusplus, SiBun, SiPython, SiGnubash, SiLinux, SiGit, SiGithub, SiFigma, SiVercel } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+import KeyboardKeyWrapper from "@/components/KeyboardKeyWrapper";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex justify-center">
-      <div className="flex w-full max-w-4xl">
+    <>
+      <KeyboardKeyWrapper />
+      <div className="min-h-screen flex justify-center">
+        <div className="flex w-full max-w-4xl">
 
-        {/* left pattern div */}
-        <div className="w-14 border-style bg-dot-grid"></div>
+          {/* left pattern div */}
+          <div className="w-14 border-style bg-dot-grid"></div>
 
-        {/* central div starts here */}
-        <div className="flex-1 max-w-3xl flex flex-col">
+          {/* central div starts here */}
+          <div className="flex-1 max-w-3xl flex flex-col">
 
-          {/* navbar code starts here */}
-          <nav className="sticky top-0 w-full z-50 py-5 backdrop-blur-sm">
-            <div className="px-8 min-w-3xl mx-auto h-9">
-              <div className="flex text-body items-center justify-between h-full">
-                <div className="h-full flex gap-5 items-center text-sm">
-                  <Link href="/">tldr.</Link>
-                  <Link href="/projects">Projects</Link>
-                  <Link href="/blogs">Blogs</Link>
-                </div>
-                <div className="h-full flex gap-5 items-center cursor-pointer">
-                  <Sun size={16} />
+            {/* navbar code starts here */}
+            <nav className="sticky top-0 w-full z-50 py-5 backdrop-blur-sm">
+              <div className="px-8 min-w-3xl mx-auto h-9">
+                <div className="flex text-body items-center justify-between h-full">
+                  <div className="h-full flex gap-5 items-center text-sm">
+                    <Link href="#tldr">[ t ] tldr.</Link>
+                    <Link href="#projects">[ p ] Projects</Link>
+                    <Link href="#skills">[ s ] Skills</Link>
+                    <Link href="#connect">[ c ] Connect</Link>
+                  </div>
+                  <div className="h-full flex gap-5 items-center cursor-pointer">
+                    <Sun size={16} />
+                  </div>
                 </div>
               </div>
+            </nav>
+
+            <div className="flex flex-col">
+              <main className="px-8 py-10 flex flex-col gap-4 min-h-screen">
+
+                {/* name + image + headings */}
+                <div className="h-50 flex flex-row justify-start gap-8 items-center border-b border-[#353535E6] pb-6">
+                  <div className="rounded-full h-34 w-34 relative overflow-hidden">
+                    <Image
+                      src="/silver_surfer.jpg"
+                      alt="image of silver surfer - display picture of mine"
+                      fill
+                      sizes="136px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <h1 className="font-heading text-heading text-4xl italic">Swayam Kumar</h1>
+                    <div className="font-body text-body text-md">21 · Front-End Engineer · Developer</div>
+                    <div className="font-body text-white text-sm">
+                      <a
+                        href="https://drive.google.com/file/d/1Upi1RJG9Ae8saBYFlg9p9eBtaWc4qps2/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-8 w-30 button-border rounded-sm flex flex-row justify-center items-center gap-2"
+                      >
+                        <ReadCvLogoIcon size={18} className="text-white" />
+                        Resume / CV
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* intro + tldr */}
+                <div id="tldr" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                  <h1 className="font-heading text-heading text-3xl pb-2">tldr.</h1>
+                  <span className="text-body text-md">
+                    I&apos;m a <span className="text-heading">Front-End Developer</span> and <span className="text-heading">Designer</span> based in Bhubaneswar, Odisha.
+                  </span>
+                  <span className="font-body text-body text-md">
+                    I build elegant and optimized web experiences using <span className="text-heading">react.js</span>, <span className="text-heading">next.js</span>, <span className="text-heading">tailwind css.</span>
+                  </span>
+                  <span>
+                    highly invested in <span className="text-heading">science</span> and <span className="text-heading">tech</span> since childhood, along with Football.
+                  </span>
+                  <span>
+                    a <span className="text-heading">computer</span> excites me and <span className="text-heading">programming</span> enables me.
+                  </span>
+                </div>
+
+                {/* github contri */}
+                <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                  <h1 className="font-heading text-heading text-3xl pb-4">GitHub Activities</h1>
+                  <GithubGraph />
+                </div>
+
+
+                {/* projects */}
+                <div id="projects" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                  <h1 className="font-heading text-heading text-3xl pb-4">Proof of Work</h1>
+                  <div className="py-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center-stretch h-180 w-full">
+                      <ProjectTile
+                        bgColor="bg-tile"
+                        text="Landing for a fictional therapist's site"
+                        src="/proj-1-cover.webp"
+                        alt="Landing Page of a fictional therapist's profile site"
+                        langtext="Next.js · Tailwind CSS · Motion"
+                        livelink="https://dr-maya-therapist.vercel.app/"
+                        repolink="https://github.com/Swayam226/therapist-profile"
+                      />
+                      <ProjectTile
+                        bgColor="bg-tile"
+                        text="Blog Haven - Full Stack CRUD App"
+                        src="/blog-cover.png"
+                        alt="Blog Haven - Full Stack CRUD App"
+                        langtext="Next.js · MongoDB · Tailwind CSS · Motion"
+                        livelink="https://blog-haven-sk.vercel.app/"
+                        repolink="https://github.com/Swayam226/crud-blog"
+                      />
+                      <ProjectTile
+                        bgColor="bg-tile"
+                        text="Beware of Assembly - Word Guessing Game"
+                        src="/assembly-cover.png"
+                        alt="Beware of Assembly - Word Guessing Game"
+                        langtext="React.js · Tailwind CSS"
+                        livelink="https://assemby-endgame.vercel.app/"
+                        repolink="https://github.com/Swayam226/assembly-endgame"
+                      />
+                      <ProjectTile
+                        bgColor="bg-tile"
+                        text="AI Recipe Generator"
+                        src="/recipe-cover.png"
+                        alt="AI Recipe Generator website"
+                        langtext="React.js · Tailwind CSS · Gemini API"
+                        livelink="https://recipe-generator-zenith.vercel.app/"
+                        repolink="https://github.com/Swayam226/recipe-generator"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/*skills tablets*/}
+                <div id="skills" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                  <h1 className="font-heading text-heading text-3xl pb-4">Tech I Work With</h1>
+                  <div className="w-full h-30 flex flex-col gap-4">
+                    <div className="flex flex-row gap-4">
+                      <SkillTablet
+                        skillText="Next.js"
+                        logo={SiNextdotjs}
+                      />
+                      <SkillTablet
+                        skillText="React.js"
+                        logo={SiReact}
+                      />
+                      <SkillTablet
+                        skillText="MongoDB"
+                        logo={SiMongodb}
+                      />
+                      <SkillTablet
+                        skillText="PostgreSQL"
+                        logo={SiPostgresql}
+                      />
+                      <SkillTablet
+                        skillText="Firebase"
+                        logo={SiFirebase}
+                      />
+                      <SkillTablet
+                        skillText="Node"
+                        logo={SiNodedotjs}
+                      />
+                      <SkillTablet
+                        skillText="Bun"
+                        logo={SiBun}
+                      />
+                    </div>
+                    <div className="flex flex-row gap-4">
+                      <SkillTablet
+                        skillText="Tailwind"
+                        logo={SiTailwindcss}
+                      />
+                      <SkillTablet
+                        skillText="Javascript"
+                        logo={SiJavascript}
+                      />
+                      <SkillTablet
+                        skillText="Postman"
+                        logo={SiPostman}
+                      />
+                      <SkillTablet
+                        skillText="MySQL"
+                        logo={SiMysql}
+                      />
+                      <SkillTablet
+                        skillText="Shadcn"
+                        logo={SiShadcnui}
+                      />
+                      <SkillTablet
+                        skillText="C/C++"
+                        logo={SiCplusplus}
+                      />
+                      <SkillTablet
+                        skillText="Java"
+                        logo={FaJava}
+                      />
+                    </div>
+                    <div className="flex flex-row gap-4">
+                      <SkillTablet
+                        skillText="Python"
+                        logo={SiPython}
+                      />
+                      <SkillTablet
+                        skillText="Linux"
+                        logo={SiLinux}
+                      />
+                      <SkillTablet
+                        skillText="Bash"
+                        logo={SiGnubash}
+                      />
+                      <SkillTablet
+                        skillText="Git"
+                        logo={SiGit}
+                      />
+                      <SkillTablet
+                        skillText="GitHub"
+                        logo={SiGithub}
+                      />
+                      <SkillTablet
+                        skillText="Figma"
+                        logo={SiFigma}
+                      />
+                      <SkillTablet
+                        skillText="Vercel"
+                        logo={SiVercel}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+
+                {/* socials */}
+                <div id="connect" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                  <h1 className="font-heading text-heading text-3xl pb-2">Connect with Me</h1>
+                  <div className="flex flex-row gap-4">
+                    <SocialLogo href="https://github.com/Swayam226" text="GitHub" icon={GithubLogoIcon} />
+                    <SocialLogo href="https://www.linkedin.com/in/swayamkumar226/" text="LinkedIn" icon={LinkedinLogoIcon} />
+                    <SocialLogo href="https://x.com/SwayamXDev" text="Twitter" icon={XLogoIcon} />
+                    <SocialLogo href="mailto:swayamkumar226@gmail.com" text="Mail" icon={EnvelopeIcon} />
+                  </div>
+                </div>
+              </main>
             </div>
-          </nav>
-
-          <div className="flex flex-col">
-            <main className="px-8 py-10 flex flex-col gap-4 min-h-screen">
-
-              {/* name + image + headings */}
-              <div className="h-50 flex flex-row justify-start gap-8 items-center border-b border-[#353535E6] pb-6">
-                <div className="rounded-full h-34 w-34 relative overflow-hidden">
-                  <Image
-                    src="/silver_surfer.jpg"
-                    alt="image of silver surfer - display picture of mine"
-                    fill
-                    sizes="136px"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <h1 className="font-heading text-heading text-4xl italic">Swayam Kumar</h1>
-                  <div className="font-body text-body text-md">21 · Front-End Engineer · Developer</div>
-                  <div className="font-body text-white text-sm">
-                    <a
-                      href="https://drive.google.com/file/d/1Upi1RJG9Ae8saBYFlg9p9eBtaWc4qps2/view?usp=sharing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="h-8 w-30 button-border rounded-sm flex flex-row justify-center items-center gap-2"
-                    >
-                      <ReadCvLogoIcon size={18} className="text-white" />
-                      Resume / CV
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* socials */}
-              <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
-                <h1 className="font-heading text-heading text-3xl pb-2">Connect with Me</h1>
-                <div className="flex flex-row gap-4">
-                  <SocialLogo href="https://github.com/Swayam226" text="GitHub" icon={GithubLogoIcon} />
-                  <SocialLogo href="https://www.linkedin.com/in/swayamkumar226/" text="LinkedIn" icon={LinkedinLogoIcon} />
-                  <SocialLogo href="https://x.com/SwayamXDev" text="Twitter" icon={XLogoIcon} />
-                  <SocialLogo href="mailto:swayamkumar226@gmail.com" text="Mail" icon={EnvelopeIcon} />
-                </div>
-              </div>
-
-              {/* intro + tldr */}
-              <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
-                <h1 className="font-heading text-heading text-3xl pb-2">tldr.</h1>
-                <span className="text-body text-md">
-                  I&apos;m a <span className="text-heading">Front-End Developer</span> and <span className="text-heading">Designer</span> based in Bhubaneswar, Odisha.
-                </span>
-                <span className="font-body text-body text-md">
-                  I build elegant and optimized web experiences using <span className="text-heading">react.js</span>, <span className="text-heading">next.js</span>, <span className="text-heading">tailwind css.</span>
-                </span>
-                <span>
-                  highly invested in <span className="text-heading">science</span> and <span className="text-heading">tech</span> since childhood, along with Football.
-                </span>
-                <span>
-                  a <span className="text-heading">computer</span> excites me and <span className="text-heading">programming</span> enables me.
-                </span>
-              </div>
-
-              {/* github contri */}
-              <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
-                <h1 className="font-heading text-heading text-3xl pb-4">GitHub Activities</h1>
-                <GithubGraph />
-              </div>
-
-
-              {/* projects */}
-              <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
-                <h1 className="font-heading text-heading text-3xl pb-4">Proof of Work</h1>
-                <div className="py-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center-stretch h-180 w-full">
-                    <ProjectTile
-                      bgColor="bg-tile"
-                      text="Landing for a fictional therapist's site"
-                      src="/proj-1-cover.webp"
-                      alt="Landing Page of a fictional therapist's profile site"
-                      langtext="Next.js · Tailwind CSS · Motion"
-                      livelink="https://dr-maya-therapist.vercel.app/"
-                      repolink="https://github.com/Swayam226/therapist-profile"
-                    />
-                    <ProjectTile
-                      bgColor="bg-tile"
-                      text="Blog Haven - Full Stack CRUD App"
-                      src="/blog-cover.png"
-                      alt="Blog Haven - Full Stack CRUD App"
-                      langtext="Next.js · MongoDB · Tailwind CSS · Motion"
-                      livelink="https://blog-haven-sk.vercel.app/"
-                      repolink="https://github.com/Swayam226/crud-blog"
-                    />
-                    <ProjectTile
-                      bgColor="bg-tile"
-                      text="Beware of Assembly - Word Guessing Game"
-                      src="/assembly-cover.png"
-                      alt="Beware of Assembly - Word Guessing Game"
-                      langtext="React.js · Tailwind CSS"
-                      livelink="https://assemby-endgame.vercel.app/"
-                      repolink="https://github.com/Swayam226/assembly-endgame"
-                    />
-                    <ProjectTile
-                      bgColor="bg-tile"
-                      text="AI Recipe Generator"
-                      src="/recipe-cover.png"
-                      alt="AI Recipe Generator website"
-                      langtext="React.js · Tailwind CSS · Gemini API"
-                      livelink="https://recipe-generator-zenith.vercel.app/"
-                      repolink="https://github.com/Swayam226/recipe-generator"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/*skills tablets*/}
-              <div className="flex flex-col">
-                <h1 className="font-heading text-heading text-3xl pb-4">Tech I Work With</h1>
-                <div className="w-full h-30 flex flex-col gap-4">
-                  <div className="flex flex-row gap-4">
-                    <SkillTablet
-                      skillText="Next.js"
-                      logo={SiNextdotjs}
-                    />
-                    <SkillTablet
-                      skillText="React.js"
-                      logo={SiReact}
-                    />
-                    <SkillTablet
-                      skillText="MongoDB"
-                      logo={SiMongodb}
-                    />
-                    <SkillTablet
-                      skillText="PostgreSQL"
-                      logo={SiPostgresql}
-                    />
-                    <SkillTablet
-                      skillText="Firebase"
-                      logo={SiFirebase}
-                    />
-                    <SkillTablet
-                      skillText="Node"
-                      logo={SiNodedotjs}
-                    />
-                    <SkillTablet
-                      skillText="Bun"
-                      logo={SiBun}
-                    />
-                  </div>
-                  <div className="flex flex-row gap-4">
-                    <SkillTablet
-                      skillText="Tailwind"
-                      logo={SiTailwindcss}
-                    />
-                    <SkillTablet
-                      skillText="Javascript"
-                      logo={SiJavascript}
-                    />
-                    <SkillTablet
-                      skillText="Postman"
-                      logo={SiPostman}
-                    />
-                    <SkillTablet
-                      skillText="MySQL"
-                      logo={SiMysql}
-                    />
-                    <SkillTablet
-                      skillText="Shadcn"
-                      logo={SiShadcnui}
-                    />
-                    <SkillTablet
-                      skillText="C/C++"
-                      logo={SiCplusplus}
-                    />
-                    <SkillTablet
-                      skillText="Java"
-                      logo={FaJava}
-                    />
-                  </div>
-                  <div className="flex flex-row gap-4">
-                    <SkillTablet
-                      skillText="Python"
-                      logo={SiPython}
-                    />
-                    <SkillTablet
-                      skillText="Linux"
-                      logo={SiLinux}
-                    />
-                    <SkillTablet
-                      skillText="Bash"
-                      logo={SiGnubash}
-                    />
-                    <SkillTablet
-                      skillText="Git"
-                      logo={SiGit}
-                    />
-                    <SkillTablet
-                      skillText="GitHub"
-                      logo={SiGithub}
-                    />
-                    <SkillTablet
-                      skillText="Figma"
-                      logo={SiFigma}
-                    />
-                    <SkillTablet
-                      skillText="Vercel"
-                      logo={SiVercel}
-                    />
-                  </div>
-                </div>
-              </div>
-            </main>
           </div>
-        </div>
 
-        {/* right pattern div */}
-        <div className="w-14 border-style bg-dot-grid"></div>
+          {/* right pattern div */}
+          <div className="w-14 border-style bg-dot-grid"></div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -7,7 +7,7 @@ export default function ProjButton(props) {
       <Link
         href={props.livelink}
         target="_blank"
-        className="w-16 h-7 border-2 border-[#373737] rounded-2xl text-xs text-green-500 flex items-center justify-center"
+        className="w-16 h-7 border-2 border-[#373737] rounded-2xl text-xs text-green-500 flex items-center justify-center hover:bg-green-950"
       >
         <span className="dot-live"></span>Visit
       </Link>
