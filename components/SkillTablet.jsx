@@ -10,6 +10,8 @@ export default function SkillTablet({ skillText, logo: Logo }) {
     transition-transform duration-200
     hover:scale-105
     cursor-pointer
+    shadow-md
+    hover:shadow-lg
   "
       style={{ borderColor: "var(--border-strong)" }}
     >

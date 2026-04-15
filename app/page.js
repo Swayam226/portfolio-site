@@ -30,10 +30,10 @@ export default function Home() {
               <div className="px-8 min-w-3xl mx-auto h-9">
                 <div className="flex text-body items-center justify-between h-full">
                   <div className="h-full flex gap-5 items-center text-sm">
-                    <Link href="#tldr">[ t ] tldr.</Link>
-                    <Link href="#projects">[ p ] Projects</Link>
-                    <Link href="#skills">[ s ] Skills</Link>
-                    <Link href="#connect">[ c ] Connect</Link>
+                    <Link className="text-shadow-2xs" href="#tldr">[ t ] tldr.</Link>
+                    <Link className="text-shadow-2xs" href="#projects">[ p ] Projects</Link>
+                    <Link className="text-shadow-2xs" href="#skills">[ s ] Skills</Link>
+                    <Link className="text-shadow-2xs" href="#connect">[ c ] Connect</Link>
                   </div>
                   <div className="h-full flex gap-5 items-center cursor-pointer">
                     <ThemeToggle />
@@ -64,7 +64,7 @@ export default function Home() {
                         href="https://drive.google.com/file/d/1Upi1RJG9Ae8saBYFlg9p9eBtaWc4qps2/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="h-8 w-30 button-border rounded-sm flex flex-row justify-center items-center gap-2"
+                        className="h-8 w-30 button-border shadow-md rounded-sm flex flex-row justify-center items-center gap-2"
                       >
                         <ReadCvLogoIcon size={18} className="text-foreground" />
                         Resume / CV
@@ -166,7 +166,7 @@ export default function Home() {
                     <SkillTablet skillText="Git" logo={SiGit} />
                     <SkillTablet skillText="GitHub" logo={SiGithub} />
                     <SkillTablet skillText="Figma" logo={SiFigma} />
-                    <SkillTablet skillText="Vercel" logo={SiVercel} />
+                    {/* <SkillTablet skillText="Vercel" logo={SiVercel} /> */}
                   </div>
                 </div>
 

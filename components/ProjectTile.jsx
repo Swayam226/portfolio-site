@@ -14,7 +14,7 @@ export default function ProjectTile({
 }) {
   return (
     <div
-      className={`${bgColor} group w-full rounded-md p-2 border transition-all duration-300 hover:-translate-y-1`}
+      className={`${bgColor} group w-full rounded-md p-2 border transition-all duration-300 hover:-translate-y-1 shadow-md`}
       style={{ borderColor: "var(--border-strong)" }}
     >
       <div className="w-full h-6/9 rounded-lg p-2 relative">
