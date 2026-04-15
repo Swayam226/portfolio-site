@@ -10,15 +10,16 @@ export default function SocialLogo({ href, text, icon: Icon }) {
             {/* Tooltip */}
             <span
               className="
-            absolute top-full mt-2 left-1/2 -translate-x-1/2
-            text-xs px-2 py-1 rounded-md
-            bg-background border border-neutral-700
-            text-info
-            opacity-0 group-hover:opacity-100
-            transition duration-200
-            pointer-events-none
-            whitespace-nowrap
-          "
+    absolute top-full mt-2 left-1/2 -translate-x-1/2
+    text-xs px-2 py-1 rounded-md
+    bg-background
+    text-info
+    opacity-0 group-hover:opacity-100
+    transition duration-200
+    pointer-events-none
+    whitespace-nowrap
+  "
+              style={{ border: "1px solid var(--border-strong)" }}
             >
               {text}
             </span>

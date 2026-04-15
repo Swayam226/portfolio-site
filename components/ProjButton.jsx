@@ -7,14 +7,16 @@ export default function ProjButton(props) {
       <Link
         href={props.livelink}
         target="_blank"
-        className="w-16 h-7 border-2 border-[#373737] rounded-2xl text-xs text-green-500 flex items-center justify-center hover:bg-green-950"
+        className="w-16 h-7 border-2 rounded-2xl text-xs text-green-500 flex items-center justify-center transition"
+        style={{ borderColor: "var(--border-strong)" }}
       >
         <span className="dot-live"></span>Visit
       </Link>
       <Link
         href={props.repolink}
         target="_blank"
-        className="w-28 h-7 border-2 border-[#373737] rounded-2xl text-xs text-info flex gap-2 items-center justify-center hover:bg-[#2e2d2d] transition-colors duration-300 hover:scale-105"
+        className="w-28 h-7 border-2 rounded-2xl text-xs text-info flex gap-2 items-center justify-center transition duration-300 hover:scale-105"
+        style={{ borderColor: "var(--border-strong)" }}
       >
         GitHub Repo
         <ArrowUpRightIcon size={12} />

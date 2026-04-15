@@ -22,6 +22,7 @@ export default function GithubGraph() {
       fontSize={12}
       theme={{
         dark: ["#2a2a2a", "#ffffff"],
+        light: ["#e4e4e7", "#18181b"],
       }}
     />
   );

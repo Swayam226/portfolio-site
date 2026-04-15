@@ -145,97 +145,28 @@ export default function Home() {
                 {/*skills tablets*/}
                 <div id="skills" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-4">Tech I Work With</h1>
-                  <div className="w-full h-30 flex flex-col gap-4">
-                    <div className="flex flex-row gap-4">
-                      <SkillTablet
-                        skillText="Next.js"
-                        logo={SiNextdotjs}
-                      />
-                      <SkillTablet
-                        skillText="React.js"
-                        logo={SiReact}
-                      />
-                      <SkillTablet
-                        skillText="MongoDB"
-                        logo={SiMongodb}
-                      />
-                      <SkillTablet
-                        skillText="PostgreSQL"
-                        logo={SiPostgresql}
-                      />
-                      <SkillTablet
-                        skillText="Firebase"
-                        logo={SiFirebase}
-                      />
-                      <SkillTablet
-                        skillText="Node"
-                        logo={SiNodedotjs}
-                      />
-                      <SkillTablet
-                        skillText="Bun"
-                        logo={SiBun}
-                      />
-                    </div>
-                    <div className="flex flex-row gap-4">
-                      <SkillTablet
-                        skillText="Tailwind"
-                        logo={SiTailwindcss}
-                      />
-                      <SkillTablet
-                        skillText="Javascript"
-                        logo={SiJavascript}
-                      />
-                      <SkillTablet
-                        skillText="Postman"
-                        logo={SiPostman}
-                      />
-                      <SkillTablet
-                        skillText="MySQL"
-                        logo={SiMysql}
-                      />
-                      <SkillTablet
-                        skillText="Shadcn"
-                        logo={SiShadcnui}
-                      />
-                      <SkillTablet
-                        skillText="C/C++"
-                        logo={SiCplusplus}
-                      />
-                      <SkillTablet
-                        skillText="Java"
-                        logo={FaJava}
-                      />
-                    </div>
-                    <div className="flex flex-row gap-4">
-                      <SkillTablet
-                        skillText="Python"
-                        logo={SiPython}
-                      />
-                      <SkillTablet
-                        skillText="Linux"
-                        logo={SiLinux}
-                      />
-                      <SkillTablet
-                        skillText="Bash"
-                        logo={SiGnubash}
-                      />
-                      <SkillTablet
-                        skillText="Git"
-                        logo={SiGit}
-                      />
-                      <SkillTablet
-                        skillText="GitHub"
-                        logo={SiGithub}
-                      />
-                      <SkillTablet
-                        skillText="Figma"
-                        logo={SiFigma}
-                      />
-                      <SkillTablet
-                        skillText="Vercel"
-                        logo={SiVercel}
-                      />
-                    </div>
+                  <div className="flex flex-wrap gap-3 items-center justify-between">
+                    <SkillTablet skillText="Next.js" logo={SiNextdotjs} />
+                    <SkillTablet skillText="React.js" logo={SiReact} />
+                    <SkillTablet skillText="MongoDB" logo={SiMongodb} />
+                    <SkillTablet skillText="PostgreSQL" logo={SiPostgresql} />
+                    <SkillTablet skillText="Firebase" logo={SiFirebase} />
+                    <SkillTablet skillText="Node" logo={SiNodedotjs} />
+                    <SkillTablet skillText="Bun" logo={SiBun} />
+                    <SkillTablet skillText="Tailwind" logo={SiTailwindcss} />
+                    <SkillTablet skillText="Javascript" logo={SiJavascript} />
+                    <SkillTablet skillText="Postman" logo={SiPostman} />
+                    <SkillTablet skillText="MySQL" logo={SiMysql} />
+                    <SkillTablet skillText="Shadcn" logo={SiShadcnui} />
+                    <SkillTablet skillText="C/C++" logo={SiCplusplus} />
+                    <SkillTablet skillText="Java" logo={FaJava} />
+                    <SkillTablet skillText="Python" logo={SiPython} />
+                    <SkillTablet skillText="Linux" logo={SiLinux} />
+                    <SkillTablet skillText="Bash" logo={SiGnubash} />
+                    <SkillTablet skillText="Git" logo={SiGit} />
+                    <SkillTablet skillText="GitHub" logo={SiGithub} />
+                    <SkillTablet skillText="Figma" logo={SiFigma} />
+                    <SkillTablet skillText="Vercel" logo={SiVercel} />
                   </div>
                 </div>
 
@@ -256,12 +187,12 @@ export default function Home() {
                 </div>
               </main>
             </div>
-          </div>
+          </div >
 
           {/* right pattern div */}
-          <div className="w-14 border-style bg-dot-grid"></div>
-        </div>
-      </div>
+          < div className="w-14 border-style bg-dot-grid" ></div >
+        </div >
+      </div >
     </>
   );
 }

@@ -14,7 +14,8 @@ export default function ProjectTile({
 }) {
   return (
     <div
-      className={`${bgColor} group w-full rounded-md p-2 border border-[#3f3f3f] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30`}
+      className={`${bgColor} group w-full rounded-md p-2 border transition-all duration-300 hover:-translate-y-1`}
+      style={{ borderColor: "var(--border-strong)" }}
     >
       <div className="w-full h-6/9 rounded-lg p-2 relative">
         <Image
@@ -27,7 +28,10 @@ export default function ProjectTile({
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition duration-300" />
+        <div
+          className="absolute inset-0 transition duration-300"
+          style={{ backgroundColor: "var(--hover-overlay)" }}
+        />
       </div>
       <div className="w-full h-3/9 rounded-lg flex flex-col gap-1">
         <h1 className="text-heading text-md font-medium pt-2">{text}</h1>
