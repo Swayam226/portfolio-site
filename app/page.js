@@ -20,20 +20,20 @@ export default function Home() {
         <div className="flex w-full max-w-4xl">
 
           {/* left pattern div */}
-          <div className="w-14 border-style bg-dot-grid"></div>
+          <div className="hidden md:block w-14 border-style bg-dot-grid"></div>
 
           {/* central div starts here */}
-          <div className="flex-1 max-w-3xl flex flex-col">
+          <div className="flex-1 w-full md:max-w-3xl flex flex-col">
 
             {/* navbar code starts here */}
             <nav className="sticky top-0 w-full z-50 py-5 backdrop-blur-sm">
-              <div className="px-8 min-w-3xl mx-auto h-9">
+              <div className="px-4 md:px-8 mx-auto h-9">
                 <div className="flex text-body items-center justify-between h-full">
-                  <div className="h-full flex gap-5 items-center text-sm">
-                    <Link className="text-shadow-2xs" href="#tldr">[ t ] tldr.</Link>
-                    <Link className="text-shadow-2xs" href="#projects">[ p ] Projects</Link>
-                    <Link className="text-shadow-2xs" href="#skills">[ s ] Skills</Link>
-                    <Link className="text-shadow-2xs" href="#connect">[ c ] Connect</Link>
+                  <div className="h-full flex gap-3 md:gap-5 items-center text-xs md:text-sm">
+                    <Link className="text-shadow-2xs" href="#tldr"><span className="hidden sm:inline">[ t ] </span>tldr.</Link>
+                    <Link className="text-shadow-2xs" href="#projects"><span className="hidden sm:inline">[ p ] </span>Projects</Link>
+                    <Link className="text-shadow-2xs" href="#skills"><span className="hidden sm:inline">[ s ] </span>Skills</Link>
+                    <Link className="text-shadow-2xs" href="#connect"><span className="hidden sm:inline">[ c ] </span>Connect</Link>
                   </div>
                   <div className="h-full flex gap-5 items-center cursor-pointer">
                     <ThemeToggle />
@@ -43,11 +43,11 @@ export default function Home() {
             </nav>
 
             <div className="flex flex-col">
-              <main className="px-8 pt-10 pb-4 flex flex-col gap-4 min-h-screen">
+              <main className="px-4 md:px-8 pt-10 pb-4 flex flex-col gap-4 min-h-screen">
 
                 {/* name + image + headings */}
-                <div className="h-50 flex flex-row justify-start gap-8 items-center border-b border-style pb-6">
-                  <div className="rounded-full h-34 w-34 relative overflow-hidden">
+                <div className="flex flex-col sm:flex-row justify-start gap-6 md:gap-8 items-start md:items-start border-b border-style pb-6">
+                  <div className="rounded-full h-24 w-24 md:h-34 md:w-34 shrink-0 relative overflow-hidden">
                     <Image
                       src="/silver_surfer.jpg"
                       alt="image of silver surfer - display picture of mine"
@@ -56,19 +56,21 @@ export default function Home() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <h1 className="font-heading text-heading text-4xl italic">Swayam Kumar</h1>
-                    <div className="font-body text-body text-md">21 · Front-End Engineer · Developer</div>
-                    <div className="font-body text-foreground text-sm">
-                      <a
-                        href="https://drive.google.com/file/d/1Upi1RJG9Ae8saBYFlg9p9eBtaWc4qps2/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="h-8 w-30 button-border shadow-md rounded-sm flex flex-row justify-center items-center gap-2"
-                      >
-                        <ReadCvLogoIcon size={18} className="text-foreground" />
-                        Resume / CV
-                      </a>
+                  <div className="flex items-center justify-center h-full">
+                    <div className="flex flex-col gap-2">
+                      <h1 className="font-heading text-heading text-2xl md:text-4xl italic">Swayam Kumar</h1>
+                      <div className="font-body text-body text-sm md:text-md">21 · Front-End Engineer · Developer</div>
+                      <div className="font-body text-foreground text-sm">
+                        <a
+                          href="https://drive.google.com/file/d/1Upi1RJG9Ae8saBYFlg9p9eBtaWc4qps2/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="h-8 w-30 button-border shadow-md rounded-sm flex flex-row justify-center items-center gap-2"
+                        >
+                          <ReadCvLogoIcon size={18} className="text-foreground" />
+                          Resume / CV
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -101,7 +103,7 @@ export default function Home() {
                 <div id="projects" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-4">Proof of Work</h1>
                   <div className="py-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center-stretch h-180 w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                       <ProjectTile
                         bgColor="bg-tile"
                         text="Landing for a fictional therapist's site"
@@ -190,7 +192,7 @@ export default function Home() {
           </div >
 
           {/* right pattern div */}
-          < div className="w-14 border-style bg-dot-grid" ></div >
+          < div className="hidden md:block w-14 border-style bg-dot-grid" ></div >
         </div >
       </div >
     </>

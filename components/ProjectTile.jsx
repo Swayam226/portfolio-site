@@ -17,7 +17,7 @@ export default function ProjectTile({
       className={`${bgColor} group w-full rounded-md p-2 border transition-all duration-300 hover:-translate-y-1 shadow-md`}
       style={{ borderColor: "var(--border-strong)" }}
     >
-      <div className="w-full h-6/9 rounded-lg p-2 relative">
+      <div className="w-full h-60 md:h-52 rounded-lg p-2 relative">
         <Image
           src={src}
           alt={alt}
@@ -33,7 +33,7 @@ export default function ProjectTile({
           style={{ backgroundColor: "var(--hover-overlay)" }}
         />
       </div>
-      <div className="w-full h-3/9 rounded-lg flex flex-col gap-1">
+      <div className="w-full rounded-lg flex flex-col gap-1">
         <h1 className="text-heading text-md font-medium pt-2">{text}</h1>
         <span className="text-info text-xs">{langtext}</span>
         <ProjButton livelink={livelink} repolink={repolink} />
