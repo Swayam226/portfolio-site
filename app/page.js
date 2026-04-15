@@ -42,7 +42,7 @@ export default function Home() {
             </nav>
 
             <div className="flex flex-col">
-              <main className="px-8 py-10 flex flex-col gap-4 min-h-screen">
+              <main className="px-8 pt-10 pb-4 flex flex-col gap-4 min-h-screen">
 
                 {/* name + image + headings */}
                 <div className="h-50 flex flex-row justify-start gap-8 items-center border-b border-[#353535E6] pb-6">
@@ -248,6 +248,10 @@ export default function Home() {
                     <SocialLogo href="https://x.com/SwayamXDev" text="Twitter" icon={XLogoIcon} />
                     <SocialLogo href="mailto:swayamkumar226@gmail.com" text="Mail" icon={EnvelopeIcon} />
                   </div>
+                </div>
+
+                <div>
+                  <span className="text-sm text-info">© 2026 Swayam Kumar. All rights reserved.</span>
                 </div>
               </main>
             </div>
