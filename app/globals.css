@@ -13,6 +13,18 @@
   --tile-color: #7c2e2e;
 }
 
+.dark {
+  --background: #18181b;
+  --foreground: #d9c594;
+
+  --heading: #fafafa;
+  --info: #a1a1a1;
+  --grid-color: lab(19.96% -0.0000149012 0);
+  --grid-color: #2a2a2a;
+
+  --tile-color: #7c2e2e;
+}
+
 .light {
   /* Light Theme */
   --background: #f4f4f5;

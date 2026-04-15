@@ -1,5 +1,6 @@
 import { Instrument_Serif, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument",
@@ -22,9 +23,17 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${instrument.variable} ${hanken.variable} h-full antialiased bg-background text-info font-body`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
+          {children}
+        </ThemeProvider></body>
     </html>
   );
 }

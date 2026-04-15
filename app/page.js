@@ -10,6 +10,7 @@ import SkillTablet from "@/components/SkillTablet";
 import { SiNextdotjs, SiReact, SiTailwindcss, SiMongodb, SiFirebase, SiPostgresql, SiNodedotjs, SiJavascript, SiPostman, SiMysql, SiShadcnui, SiCplusplus, SiBun, SiPython, SiGnubash, SiLinux, SiGit, SiGithub, SiFigma, SiVercel } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import KeyboardKeyWrapper from "@/components/KeyboardKeyWrapper";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
                     <Link href="#connect">[ c ] Connect</Link>
                   </div>
                   <div className="h-full flex gap-5 items-center cursor-pointer">
-                    <Sun size={16} />
+                    <ThemeToggle />
                   </div>
                 </div>
               </div>
