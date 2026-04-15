@@ -1,37 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  /* default dark theme*/
+  /* DARK THEME (default) */
   --background: #18181b;
   --foreground: #d9c594;
 
   --heading: #fafafa;
   --info: #a1a1a1;
-  --grid-color: lab(19.96% -0.0000149012 0);
+
   --grid-color: #2a2a2a;
+  --tile-color: #2a2a2a;
 
-  --tile-color: #7c2e2e;
-}
-
-.dark {
-  --background: #18181b;
-  --foreground: #d9c594;
-
-  --heading: #fafafa;
-  --info: #a1a1a1;
-  --grid-color: lab(19.96% -0.0000149012 0);
-  --grid-color: #2a2a2a;
-
-  --tile-color: #7c2e2e;
+  --border-color: rgba(53, 53, 53, 0.9);
+  --button-bg: #2a2a2a;
+  --button-hover: #373737;
 }
 
 .light {
-  /* Light Theme */
+  /* LIGHT THEME */
   --background: #f4f4f5;
   --foreground: #18181b;
 
   --heading: #09090b;
-  --info: #818181;
+  --info: #6b7280;
+
+  --grid-color: #d4d4d8;
+  --tile-color: #ffffff;
+
+  --border-color: rgba(0, 0, 0, 0.08);
+  --button-bg: #e4e4e7;
+  --button-hover: #d4d4d8;
 }
 
 @theme inline {
@@ -51,6 +49,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.bg-tile {
+  background-color: var(--tile-color);
+}
+
 .bg-dot-grid {
   background-image: radial-gradient(
     var(--grid-color) 1.25px,
@@ -60,23 +62,20 @@ html {
 }
 
 .border-style {
-  /* border-color: #b43131; */
-  border: 1px solid rgba(53, 53, 53, 0.9);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .social-border-style {
-  border: 1px solid #818181;
-  border-radius: 10px;
+  border: 1px solid var(--border-color);
 }
 
 .button-border {
-  border: none;
-  background-color: #2a2a2a;
+  background-color: var(--button-bg);
   transition: background-color 0.3s ease;
 }
+
 .button-border:hover {
-  border: none;
-  background-color: #373737;
+  background-color: var(--button-hover);
 }
 
 ::selection {

@@ -46,7 +46,7 @@ export default function Home() {
               <main className="px-8 pt-10 pb-4 flex flex-col gap-4 min-h-screen">
 
                 {/* name + image + headings */}
-                <div className="h-50 flex flex-row justify-start gap-8 items-center border-b border-[#353535E6] pb-6">
+                <div className="h-50 flex flex-row justify-start gap-8 items-center border-b border-style pb-6">
                   <div className="rounded-full h-34 w-34 relative overflow-hidden">
                     <Image
                       src="/silver_surfer.jpg"
@@ -59,14 +59,14 @@ export default function Home() {
                   <div className="flex flex-col gap-2">
                     <h1 className="font-heading text-heading text-4xl italic">Swayam Kumar</h1>
                     <div className="font-body text-body text-md">21 · Front-End Engineer · Developer</div>
-                    <div className="font-body text-white text-sm">
+                    <div className="font-body text-foreground text-sm">
                       <a
                         href="https://drive.google.com/file/d/1Upi1RJG9Ae8saBYFlg9p9eBtaWc4qps2/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="h-8 w-30 button-border rounded-sm flex flex-row justify-center items-center gap-2"
                       >
-                        <ReadCvLogoIcon size={18} className="text-white" />
+                        <ReadCvLogoIcon size={18} className="text-foreground" />
                         Resume / CV
                       </a>
                     </div>
@@ -74,7 +74,7 @@ export default function Home() {
                 </div>
 
                 {/* intro + tldr */}
-                <div id="tldr" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                <div id="tldr" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-2">tldr.</h1>
                   <span className="text-body text-md">
                     I&apos;m a <span className="text-heading">Front-End Developer</span> and <span className="text-heading">Designer</span> based in Bhubaneswar, Odisha.
@@ -91,14 +91,14 @@ export default function Home() {
                 </div>
 
                 {/* github contri */}
-                <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-4">GitHub Activities</h1>
                   <GithubGraph />
                 </div>
 
 
                 {/* projects */}
-                <div id="projects" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                <div id="projects" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-4">Proof of Work</h1>
                   <div className="py-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center-stretch h-180 w-full">
@@ -143,7 +143,7 @@ export default function Home() {
                 </div>
 
                 {/*skills tablets*/}
-                <div id="skills" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                <div id="skills" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-4">Tech I Work With</h1>
                   <div className="w-full h-30 flex flex-col gap-4">
                     <div className="flex flex-row gap-4">
@@ -241,7 +241,7 @@ export default function Home() {
 
 
                 {/* socials */}
-                <div id="connect" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-[#353535E6]">
+                <div id="connect" className="scroll-mt-20 flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-2">Connect with Me</h1>
                   <div className="flex flex-row gap-4">
                     <SocialLogo href="https://github.com/Swayam226" text="GitHub" icon={GithubLogoIcon} />
