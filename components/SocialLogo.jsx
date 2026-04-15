@@ -7,7 +7,7 @@ export default function SocialLogo({ href, text, icon: Icon }) {
       <div className="relative group w-fit">
         <div className="h-7 w-7 flex items-center justify-start ">
           <a href={href} target="_blank" rel="noopener noreferrer">
-            {/* Tooltip */}
+            {/* tooltip here */}
             <span
               className="
     absolute top-full mt-2 left-1/2 -translate-x-1/2
