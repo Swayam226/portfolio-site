@@ -1,6 +1,7 @@
 import { Instrument_Serif, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/next"
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
           enableSystem={false}
         >
           {children}
+          <Analytics />
         </ThemeProvider></body>
     </html>
   );
