@@ -3,7 +3,7 @@
 :root {
   /* DARK THEME (default) */
   --background: #18181b;
-  --foreground: #d9c594;
+  --foreground: #a1a1a1;
 
   --heading: #fafafa;
   --info: #a1a1a1;
@@ -82,6 +82,7 @@ html {
 
 .button-border:hover {
   background-color: var(--button-hover);
+  color: #fafafa;
 }
 
 ::selection {

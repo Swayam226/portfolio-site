@@ -67,7 +67,7 @@ export default function Home() {
                           rel="noopener noreferrer"
                           className="h-8 w-30 button-border shadow-md rounded-sm flex flex-row justify-center items-center gap-2"
                         >
-                          <ReadCvLogoIcon size={18} className="text-foreground" />
+                          <ReadCvLogoIcon size={18} />
                           Resume / CV
                         </a>
                       </div>
