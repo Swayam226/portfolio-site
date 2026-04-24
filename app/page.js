@@ -11,6 +11,7 @@ import { SiNextdotjs, SiReact, SiTailwindcss, SiMongodb, SiFirebase, SiPostgresq
 import { FaJava } from "react-icons/fa";
 import KeyboardKeyWrapper from "@/components/KeyboardKeyWrapper";
 import ThemeToggle from "@/components/ThemeToggle";
+import VisitorCounter from "@/components/VisitorCounter";
 
 export default function Home() {
   return (
@@ -184,8 +185,9 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div>
+                <div className="flex flex-row justify-between">
                   <span className="text-sm text-info">© 2026 Swayam Kumar. All rights reserved.</span>
+                  <VisitorCounter />
                 </div>
               </main>
             </div>
