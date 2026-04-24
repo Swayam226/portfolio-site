@@ -2,6 +2,7 @@ import { Instrument_Serif, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next"
+import { Databuddy } from '@databuddy/sdk/react';
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument",
@@ -34,6 +35,13 @@ export default function RootLayout({ children }) {
           enableSystem={false}
         >
           {children}
+          <Databuddy
+            clientId="3f9e1ea8-7f87-4370-8142-93291d53d6df"
+            trackPerformance={false}
+            trackScreenViews={false}
+            batchTimeout={5000}
+            initialRetryDelay={1000}
+          />
           <Analytics />
         </ThemeProvider></body>
     </html>
