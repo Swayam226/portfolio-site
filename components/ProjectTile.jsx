@@ -23,13 +23,13 @@ export default function ProjectTile({
           alt={alt}
           className="object-cover
           transition-transform duration-300
-          group-hover:scale-105"
+          group-hover:scale-105 rounded-md"
           quality={100}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
         />
         <div
-          className="absolute inset-0 transition duration-300"
+          className="absolute inset-0 transition duration-300 rounded-md"
           style={{ backgroundColor: "var(--hover-overlay)" }}
         />
       </div>
