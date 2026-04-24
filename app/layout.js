@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
           defaultTheme="dark"
           enableSystem={false}
         >
-          {children}
           <Databuddy
             clientId="3f9e1ea8-7f87-4370-8142-93291d53d6df"
             trackPerformance={false}
@@ -42,6 +41,7 @@ export default function RootLayout({ children }) {
             batchTimeout={5000}
             initialRetryDelay={1000}
           />
+          {children}
           <Analytics />
         </ThemeProvider></body>
     </html>
