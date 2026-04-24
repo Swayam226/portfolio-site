@@ -116,7 +116,7 @@ export default function Home() {
                       <ProjectTile
                         bgColor="bg-tile"
                         text="Blog Haven - Full Stack CRUD App"
-                        src="/blog-cover.png"
+                        src="/blog-cover.webp"
                         alt="Blog Haven - Full Stack CRUD App"
                         langtext="Next.js · MongoDB · Tailwind CSS · Motion"
                         livelink="https://blog-haven-sk.vercel.app/"
@@ -125,7 +125,7 @@ export default function Home() {
                       <ProjectTile
                         bgColor="bg-tile"
                         text="Beware of Assembly - Word Guessing Game"
-                        src="/assembly-cover.png"
+                        src="/assembly-cover.webp"
                         alt="Beware of Assembly - Word Guessing Game"
                         langtext="React.js · Tailwind CSS"
                         livelink="https://assemby-endgame.vercel.app/"
@@ -134,7 +134,7 @@ export default function Home() {
                       <ProjectTile
                         bgColor="bg-tile"
                         text="AI Recipe Generator"
-                        src="/recipe-cover.png"
+                        src="/recipe-cover.webp"
                         alt="AI Recipe Generator website"
                         langtext="React.js · Tailwind CSS · Gemini API"
                         livelink="https://recipe-generator-zenith.vercel.app/"

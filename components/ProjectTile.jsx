@@ -23,7 +23,7 @@ export default function ProjectTile({
           alt={alt}
           className="object-cover
           transition-transform duration-300
-          group-hover:scale-105 rounded-md"
+          group-hover:scale-102 rounded-md"
           quality={100}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
