@@ -63,7 +63,7 @@ export default function Home() {
                       <div className="font-body text-body text-sm md:text-md">21 · Front-End Engineer · Developer</div>
                       <div className="font-body text-foreground text-sm">
                         <a
-                          href="https://drive.google.com/file/d/1Upi1RJG9Ae8saBYFlg9p9eBtaWc4qps2/view?usp=sharing"
+                          href="https://drive.google.com/file/d/1ZVX7RPBWagjVBIWsoUnhANVUvkItG-Hy/view?usp=sharing"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="h-8 w-30 button-border shadow-md rounded-sm flex flex-row justify-center items-center gap-2"
