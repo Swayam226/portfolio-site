@@ -102,7 +102,7 @@ export default function Home() {
                 {/* experience */}
                 <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-4">Experience</h1>
-                  <div className="flex flex-row gap-4 justify-between">
+                  <div className="flex flex-col sm:flex-row gap-4 justify-between sm:items-start sm:justify-between">
                     <div className="p-2 pl-0 flex flex-row gap-4 items-center">
                       <div className="w-12 h-12 rounded-xl border flex items-center justify-center bg-muted/30 border-[#2d2b2b]">
                         <Image
@@ -127,7 +127,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col">
                       <div className="text-sm">May 2026 - Present</div>
-                      <div className="text-sm text-right">Noida (Remote)</div>
+                      <div className="text-sm text-left md:text-right">Noida (Remote)</div>
                     </div>
                   </div>
                 </div>
