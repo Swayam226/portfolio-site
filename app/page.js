@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Sun } from "lucide-react";
+import { MoveUpRight, Sun } from "lucide-react";
 import Image from "next/image";
 import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react/ssr";
 import { EnvelopeIcon, ReadCvLogoIcon, XLogoIcon } from "@phosphor-icons/react/dist/ssr";
@@ -97,6 +97,39 @@ export default function Home() {
                 <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
                   <h1 className="font-heading text-heading text-3xl pb-4">GitHub Activities</h1>
                   <GithubGraph />
+                </div>
+
+                {/* experience */}
+                <div className="flex flex-col gap-2 justify-start pb-5.5 border-b border-style">
+                  <h1 className="font-heading text-heading text-3xl pb-4">Experience</h1>
+                  <div className="flex flex-row gap-4 justify-between">
+                    <div className="p-2 pl-0 flex flex-row gap-4 items-center">
+                      <div className="w-12 h-12 rounded-xl border flex items-center justify-center bg-muted/30 border-[#2d2b2b]">
+                        <Image
+                          src="/waah_tech_logo.png"
+                          alt="WAAH Technologies Logo"
+                          width={40}
+                          height={40}
+                          priority
+                          className="object-contain"
+                        />
+                      </div>
+                      <div className="flex flex-col">
+                        <div className="text-heading hover:text-blue-500 flex flex-row items-center gap-1">
+                          <a href="https://waahtechnologies.com/" target="_blank" rel="noopener noreferrer">
+                            WAAH Technologies LLP
+                          </a>
+
+                          <MoveUpRight size={12} className="text-info" />
+                        </div>
+                        <div className="text-sm">SDE Intern (Frontend)</div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col">
+                      <div className="text-sm">May 2026 - Present</div>
+                      <div className="text-sm text-right">Noida (Remote)</div>
+                    </div>
+                  </div>
                 </div>
 
 
