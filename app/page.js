@@ -86,10 +86,10 @@ export default function Home() {
                     I build elegant and optimized web experiences using <span className="text-heading">react.js</span>, <span className="text-heading">next.js</span>, <span className="text-heading">tailwind css.</span>
                   </span>
                   <span>
-                    highly invested in <span className="text-heading">science</span> and <span className="text-heading">tech</span> since childhood, along with Football.
+                    highly invested in <span className="text-heading">science</span> and <span className="text-heading">tech</span> and <span className="text-heading">football.</span>
                   </span>
                   <span>
-                    a <span className="text-heading">computer</span> excites me and <span className="text-heading">programming</span> enables me.
+                    having multiple <span className="text-heading">interests</span> is my <span className="text-heading">tragedy.</span>
                   </span>
                 </div>
 
